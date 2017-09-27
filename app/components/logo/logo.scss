@@ -1,0 +1,9 @@
+.logo {
+    &__circle {
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        height: 5rem;
+        width: 5rem;
+    }
+}
