@@ -1,1 +1,19 @@
 $primary-font: 'Source Sans Pro', sans-serif;
+$secondary-font: 'Playfair Display', serif;
+$secondary-font: 'Bitter', serif;
+
+@function baseline($size) {
+    @if ($size < .5rem) {
+        @return .5rem;
+    } @elseif ($size < 1rem) {
+        @return 1rem;
+    } @elseif ($size < 2rem) {
+        @return 2rem;
+    } @elseif ($size < 3rem) {
+        @return 3rem;
+    } @elseif ($size < 4rem) {
+        @return 4rem;
+    } @else {
+        @return 5rem;
+    }
+}
