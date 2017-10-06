@@ -108,13 +108,31 @@ export default class App extends Component {
                                 <button className="button button--primary">Get with discount</button>
                             </p>
                             <p>
-                                &nbsp;<button className="button button--secondary">Buy full price</button>
+                                <button className="button button--secondary">Buy full price</button>
                             </p>
                         </div>
                     </section>
-                </article>
 
-                <span className="spacer spacer--large@large"></span>
+                    <span className="spacer spacer--medium spacer--super@large"></span>
+
+                    <footer className="author">
+                        <div className="author__image-holder">
+                            <img src="https://scontent.flhr3-1.fna.fbcdn.net/v/t1.0-1/p160x160/12075069_10100714711130566_3589096950752527159_n.jpg?oh=0c7f958e1df78e358cefd98334e07087&oe=5A800A27" className="author__image" />
+                        </div>
+                        <p className="author__name">
+                            Gemma Black
+                        </p>
+
+                        <p className="author__link">
+                            <a href="https://github.com/gemmadlou" target="_blank">
+                                https://github.com/gemmadlou
+                            </a>
+                        </p>
+                    </footer>
+
+                    <span className="spacer spacer--medium spacer--large@large"></span>
+
+                </article>
             </div>
         )
 
