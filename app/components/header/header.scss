@@ -2,20 +2,13 @@
 
 .header {
     background-color: $white;
-    height: 7rem;
+    height: 6rem;
     position: fixed;
     width: 100%;
 
     &__logo {
         left: 1.5rem;
         position: relative;
-        top: 1.5rem; 
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-        &__logo {
-            left: 3rem;
-            top: 3rem; 
-        }
+        top: 1rem; 
     }
 }

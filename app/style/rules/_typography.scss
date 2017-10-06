@@ -2,9 +2,7 @@ $primary-font: 'Source Sans Pro', sans-serif;
 $secondary-font: 'Bitter', serif;
 
 @function baseline($size) {
-    @if ($size < .5rem) {
-        @return .5rem;
-    } @elseif ($size < 1rem) {
+    @if ($size <= 1rem) {
         @return 1rem;
     } @elseif ($size < 1.5rem) {
         @return 1.5rem;

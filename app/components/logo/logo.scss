@@ -9,7 +9,7 @@
 
     &__circle {
         background-color: $black;
-        border: 2px dashed $white;
+        border: 4px dashed $white;
         border-radius: 50%;
         display: inline-block;
         height: 4rem;
@@ -28,22 +28,5 @@
         left: 5rem;
         position: absolute;
         top: 2rem;
-    }
-
-    @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-        &__circle {
-            height: 5rem;
-            width: 5rem;
-        }
-
-        &__nerd-talk {
-            left: 6rem;
-            top: .55rem;
-        }
-    
-        &__code-speak {
-            left: 6rem;
-            top: 2.4rem;
-        }
     }
 }
