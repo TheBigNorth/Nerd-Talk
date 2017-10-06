@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../header/header.js';
+import AppHeader from '../header/header.js';
 
 export default class App extends Component {
     
@@ -7,8 +7,11 @@ export default class App extends Component {
 
         return (
             <div>
-                <Header></Header>
+                <AppHeader></AppHeader>
+
                 <div className="header-spacer"></div>
+
+                <span className="spacer spacer--medium@medium spacer--large@large"></span>
 
                 <article>
                     <header className="section">
@@ -26,6 +29,10 @@ export default class App extends Component {
                     <section className="section">
                         <div className="section__inner padded typography typography--article">
                             <img src="https://vangogh.teespring.com/v3/image/cb-x8vy8F1ntz6UthLhu4r_Ls3Y/480/560.jpg" />
+                            <h3>Are you a developer?</h3>
+                            <p>Just checking. This hoodie was
+                                made for developers by a developer.
+                            </p>
                             <h3>Is it just a hoodie?</h3>
                             <p>Yeah...</p>
                             <p>Sorry.</p>
@@ -64,8 +71,7 @@ export default class App extends Component {
                                 unsubscribe anytime.
                             </p>
                             <p>
-                                <button>Get a discount?</button>
-                                <button>Just Buy</button>
+                                <button className="button button--primary">Get with discount</button>
                             </p>
                             <h3>What about the hoodie itself?</h3>
                             <p>The hoodies are custom made with the help of Teespring. They fulfill the
@@ -99,12 +105,14 @@ export default class App extends Component {
                                 However, I can deal with issues. No problem.
                             </p>
                             <p>
-                                <button>Get a discount?</button>
-                                <button>Just Buy</button>
+                                <button className="button button--primary">Get with discount</button> or 
+                                &nbsp;<button className="button button--secondary">Buy full price</button>
                             </p>
                         </div>
                     </section>
                 </article>
+
+                <span className="spacer spacer--large@large"></span>
             </div>
         )
 

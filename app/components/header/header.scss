@@ -11,4 +11,14 @@
         position: relative;
         top: 1rem; 
     }
+
+    @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+        &__logo {
+            left: 3rem;
+        }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, 'large')) {
+        background-color: transparent;
+    }
 }
