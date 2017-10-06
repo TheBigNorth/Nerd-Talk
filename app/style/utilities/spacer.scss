@@ -1,0 +1,38 @@
+@import '../rules/index';
+
+.spacer {
+    $sizes: (
+        'xsmall': $baseline * 2,
+        'small' : $baseline * 3,
+        'medium' : $baseline * 4,
+        'large': $baseline * 5,
+        'xlarge': $baseline * 6,
+        'xxlarge': $baseline * 8,
+        'super': $baseline * 10
+    );
+
+    @each $size, $value in $sizes {
+        &--#{$size} {
+            height: $value;
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+            &--#{$size}\@medium {
+                height: $value;
+            }
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, 'large')) {
+            &--#{$size}\@large {
+                height: $value;
+            }
+        }
+        
+        @media only screen and (min-width: map-get($breakpoints, 'xlarge')) {
+            &--#{$size}\@xlarge {
+                height: $value;
+            }
+        }
+    }
+    display: block;
+}

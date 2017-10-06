@@ -1,0 +1,22 @@
+@import '../rules/index';
+
+.button {
+    background-color: $greylight;
+    color: $white;
+    font-weight: 400;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    transition: opacity .3s;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &--primary {
+        background-color: $red;
+    }
+
+    &--secondary {
+        background-color: $blue;
+    }
+}
