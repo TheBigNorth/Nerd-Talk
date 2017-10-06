@@ -130,7 +130,7 @@ export default class App extends Component {
                         </p>
                     </footer>
 
-                    <span className="spacer spacer--xlarge spacer--large@xxlarge"></span>
+                    <span className="spacer spacer--medium spacer--large@xxlarge"></span>
 
                 </article>
             </div>

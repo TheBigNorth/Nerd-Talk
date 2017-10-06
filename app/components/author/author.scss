@@ -12,7 +12,7 @@
         position: relative;
 
         &:before {
-            border-top: 2px solid $greylightest;
+            border-top: 2px solid $black;
             content: '';
             display: block;
             left: 0;
@@ -24,7 +24,7 @@
     }
 
     &__image {
-        border: 2px solid $greylighter;
+        border: 2px solid $black;
         border-radius: 100%;
         margin: 0 auto ($baseline * 2);
         max-width: 20rem;
