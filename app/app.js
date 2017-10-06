@@ -1,18 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-class App extends Component {
-
-  render() {
-
-    return (
-        <div>
-            Nerd Talk
-        </div>
-    )
-
-  }
-}
+import App from './components/app/app';
 
 ReactDOM.render(
   <App />,

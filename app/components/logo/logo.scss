@@ -1,0 +1,30 @@
+@import '../../style/rules/index';
+
+.logo {
+    color: $black;
+    font-family: $primary-font;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__circle {
+        background-color: $black;
+        border: 2px dashed $white;
+        border-radius: 50%;
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &__nerd-talk {
+        left: 3.5rem;
+        position: absolute;
+        top: .45rem;
+    }
+
+    &__code-speak {
+        left: 3.5rem;
+        position: absolute;
+        top: 1.55rem;
+    }
+}
