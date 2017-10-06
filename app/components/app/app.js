@@ -42,8 +42,8 @@ export default class App extends Component {
                                 It wasn't dyed with organic dye from sea moluscs.
                             </p>
                             <h3>So what's so special about it then?</h3>
-                            <p>Most of you guys write great code! 
-                                The problems they have however seem less about the code they write, 
+                            <p>Most of you guys write good code.
+                                The problems you have however seem less about the code you write, 
                                 but working with clients and teams outside the dev bubble.
                             </p>
                             <p>Requirements change...last minute. What the client wanted, wasn't actually
@@ -56,7 +56,7 @@ export default class App extends Component {
                             </p>
                             <p>It's not their fault. They just don't understand. So you have to spend
                                 time in meetings, explaining what can and cannot be achieved with
-                                100% custom code.
+                                100% custom code within an optimistic time frame.
                             </p>
                             <p>I guess it's all part of the fun of being a developer.</p>
                             <p>Hence: 99 problems but a bug ain't one.</p>
@@ -66,7 +66,7 @@ export default class App extends Component {
                             </p>
                             <h3>Can we get a discount?</h3>
                             <p>Of course! You can get 30% off when you join 
-                                Nerd Talk Weekly. Currently we have no plans to send a newsletter
+                                Nerd Talk. Currently we have no plans to send a newsletter
                                 yet as it's just beginning, but we plan to in future. Of course, 
                                 unsubscribe anytime.
                             </p>
@@ -86,7 +86,7 @@ export default class App extends Component {
                                 They had 99 problems, but a bug wasn’t one. Cheesy I know.
                             </p>
                             <h3>Don’t like red?</h3>
-                            <p>No problem. It’s my favourite colour, but if you like 
+                            <p>No problem. If you like 
                                 black or grey, we’ve got you covered.
                             </p>
                             <h3>Do I make the hoodies?</h3>
@@ -105,7 +105,9 @@ export default class App extends Component {
                                 However, I can deal with issues. No problem.
                             </p>
                             <p>
-                                <button className="button button--primary">Get with discount</button> or 
+                                <button className="button button--primary">Get with discount</button>
+                            </p>
+                            <p>
                                 &nbsp;<button className="button button--secondary">Buy full price</button>
                             </p>
                         </div>
