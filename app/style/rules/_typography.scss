@@ -6,8 +6,12 @@ $secondary-font: 'Bitter', serif;
         @return .5rem;
     } @elseif ($size < 1rem) {
         @return 1rem;
+    } @elseif ($size < 1.5rem) {
+        @return 1.5rem;
     } @elseif ($size < 2rem) {
         @return 2rem;
+    } @elseif ($size < 2.5rem) {
+        @return 2.5rem;
     } @elseif ($size < 3rem) {
         @return 3rem;
     } @elseif ($size < 4rem) {

@@ -1,6 +1,8 @@
 @import '../../style/rules/index';
 
 .post-intro {
+    color: $black;
+    
     &__title {
         font-family: $secondary-font;
         font-size: 2.8rem;
@@ -10,7 +12,10 @@
     }
 
     &__date {
+        display: block;
         font-family: $primary-font;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: baseline(1.3rem);
+        margin-bottom: baseline(.5rem);
     }
 }

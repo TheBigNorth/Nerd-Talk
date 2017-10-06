@@ -1,0 +1,23 @@
+@import '../rules/index';
+
+.typography {
+    font-family: $primary-font;
+    font-size: 2.3rem;
+    font-weight: 100;
+    line-height: baseline(2.3rem);
+
+    p {
+        margin-bottom: baseline(1rem);
+    }
+
+    img {
+        margin-bottom: baseline(1rem);
+    }
+
+    h2 {
+        color: $grey;
+        font-family: $secondary-font;
+        line-height: baseline(3rem);
+        margin-bottom: baseline(1rem);
+    }
+}
