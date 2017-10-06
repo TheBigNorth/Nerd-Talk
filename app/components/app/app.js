@@ -18,7 +18,7 @@ export default class App extends Component {
                                     Nerd Talk launches the passive aggressive developer hoodie
                                 </h1>
                                 <date className="post-intro__date">
-                                    Monday 1 October 2017
+                                    Saturday, 7 October 2017
                                 </date>
                             </div>
                         </div>
@@ -33,15 +33,6 @@ export default class App extends Component {
                                 discovered in the mountains of Peru. It hasn't been handstitched
                                 using 1,000 year-old secrets passed from generation to generation.
                                 It wasn't dyed with organic dye from sea moluscs.
-                            </p>
-                            <h3>Can we get a discount?</h3>
-                            <p>Of course! You can get 30% off when you join 
-                                Nerd Talk Weekly. Currently we have no plans to send a newsletter
-                                yet as we're just beginning, but we plan to in future.
-                            </p>
-                            <p>
-                                <button>Get a discount?</button>
-                                <button>Just Buy</button>
                             </p>
                             <h3>So what's so special about it then?</h3>
                             <p>Most of you guys write great code! 
@@ -66,6 +57,16 @@ export default class App extends Component {
                             <p>It occurred to me only after designing it. It is rather passive
                                 aggressive. So be discerning about when and where you wear it.
                             </p>
+                            <h3>Can we get a discount?</h3>
+                            <p>Of course! You can get 30% off when you join 
+                                Nerd Talk Weekly. Currently we have no plans to send a newsletter
+                                yet as it's just beginning, but we plan to in future. Of course, 
+                                unsubscribe anytime.
+                            </p>
+                            <p>
+                                <button>Get a discount?</button>
+                                <button>Just Buy</button>
+                            </p>
                             <h3>What about the hoodie itself?</h3>
                             <p>The hoodies are custom made with the help of Teespring. They fulfill the
                                 order every 3 days - or after the campaign is finished.
@@ -74,7 +75,7 @@ export default class App extends Component {
                             <p>Nada. Teespring only print custom orders. That way, we're not adding
                                 unneeded rubbish to the earth. At least, not through unwanted hoodies.</p>
                             <h3>Again. So, where’d the idea come from?</h3>
-                            <p>I won’t say who, but I saw steam. It sprayed out tne neck  
+                            <p>I won’t say who, but I saw steam. It sprayed from the neck  
                                 of a fellow developer. They had just returned from a meeting. 
                                 They had 99 problems, but a bug wasn’t one. Cheesy I know.
                             </p>

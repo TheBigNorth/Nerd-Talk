@@ -1,6 +1,8 @@
 $primary-font: 'Source Sans Pro', sans-serif;
 $secondary-font: 'Bitter', serif;
 
+$baseline: 1rem;
+
 @function baseline($size) {
     @if ($size <= 1rem) {
         @return 1rem;
@@ -14,6 +16,12 @@ $secondary-font: 'Bitter', serif;
         @return 3rem;
     } @elseif ($size < 4rem) {
         @return 4rem;
+    } @elseif ($size < 5rem) {
+        @return 5rem;
+    } @elseif ($size < 6rem) {
+        @return 6rem;
+    } @elseif ($size < 7rem) {
+        @return 7rem;
     } @else {
         @return 5rem;
     }

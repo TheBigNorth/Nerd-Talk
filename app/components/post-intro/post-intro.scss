@@ -9,6 +9,16 @@
         font-weight: 600;
         line-height: baseline(2.8rem);
         margin-bottom: baseline(.5rem);
+
+        @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+            font-size: 4rem;
+            line-height: baseline(4rem);
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, 'large')) {
+            font-size: 6rem;
+            line-height: baseline(6rem);
+        }
     }
 
     &__date {
@@ -18,5 +28,11 @@
         font-weight: 300;
         line-height: baseline(1.3rem);
         margin-bottom: baseline(.5rem);
+        
+        @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+            font-size: 1.6rem;
+            line-height: baseline(1.6rem);
+            margin-bottom: $baseline * 2;
+        }
     }
 }
