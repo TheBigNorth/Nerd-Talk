@@ -1,4 +1,7 @@
+@import '../../style/rules/index';
+
 .header {
+    height: 8rem;
     position: fixed;
     width: 100%;
 
@@ -6,5 +9,12 @@
         left: 1.5rem;
         position: relative;
         top: 1.5rem; 
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+        &__logo {
+            left: 3rem;
+            top: 3rem; 
+        }
     }
 }
