@@ -11,11 +11,6 @@
         line-height: baseline(2.1rem);
     }
 
-    @media only screen and (min-width: map-get($breakpoints, 'large')) {
-        font-size: 2.4rem;
-        line-height: baseline(2.5rem);
-    }
-
     p {
         margin-bottom: baseline(1rem);
 
