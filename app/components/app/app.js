@@ -125,12 +125,10 @@ export default class App extends Component {
 
                         <p className="author__link">
                             <a href="https://github.com/gemmadlou" target="_blank">
-                                https://github.com/gemmadlou
+                                Github
                             </a>
                         </p>
                     </footer>
-
-                    <span className="spacer spacer--medium spacer--large@xxlarge"></span>
 
                 </article>
             </div>

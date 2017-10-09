@@ -3,7 +3,7 @@
 .logo {
     color: $black;
     font-family: $primary-font;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
 
@@ -17,14 +17,12 @@
     }
 
     &__nerd-talk {
-        font-size: 1.5rem;
         left: 5rem;
         position: absolute;
         top: .55rem;
     }
 
     &__code-speak {
-        font-size: 1.5rem;
         left: 5rem;
         position: absolute;
         top: 2rem;
