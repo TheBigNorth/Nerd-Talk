@@ -2,6 +2,7 @@
 
 .header {
     background-color: $white;
+    border-bottom: 1px solid $greylightest;
     height: 6rem;
     position: fixed;
     width: 100%;
@@ -12,13 +13,20 @@
         top: 1rem; 
     }
 
+    &__navigation {
+        position: absolute;
+        right: 1.5rem;
+        top: 2rem;
+    }
+
     @media only screen and (min-width: map-get($breakpoints, 'medium')) {
         &__logo {
             left: 3rem;
         }
+        
+        &__navigation {
+            right: 3rem;
+        }
     }
 
-    @media only screen and (min-width: map-get($breakpoints, 'large')) {
-        background-color: transparent;
-    }
 }

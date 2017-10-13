@@ -80,11 +80,6 @@ export default class App extends Component {
                             <h3>So no wastage?</h3>
                             <p>Nada. Teespring only print custom orders. That way, we're not adding
                                 unneeded rubbish to the earth. At least, not through unwanted hoodies.</p>
-                            <h3>Again. So, where’d the idea come from?</h3>
-                            <p>I won’t say who, but I saw steam. It sprayed from the neck  
-                                of a fellow developer. They had just returned from a meeting. 
-                                They had 99 problems, but a bug wasn’t one. Cheesy I know.
-                            </p>
                             <h3>Don’t like red?</h3>
                             <p>No problem. If you like 
                                 black or grey, we’ve got you covered.

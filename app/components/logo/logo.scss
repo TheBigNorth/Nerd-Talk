@@ -1,11 +1,8 @@
 @import '../../style/rules/index';
 
 .logo {
+    @extend %small-marked-font;
     color: $black;
-    font-family: $primary-font;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
 
     &__circle {
         background-color: $black;

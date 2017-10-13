@@ -1,16 +1,11 @@
 @import '../../style/rules/index';
 
 .author {
+    @extend %small-marked-font;
     background-color: $greylightest;
-    //border-top: 1px solid $black;
     color: $black;
-    font-family: $primary-font;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: baseline(1.5rem);
     margin-top: 7.5rem;
     padding-bottom: $baseline * 3;
-    text-transform: uppercase;
 
     &__image-holder {
         padding-left: 1.5rem;

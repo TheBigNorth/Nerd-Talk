@@ -26,3 +26,11 @@ $baseline: 1rem;
         @return 5rem;
     }
 }
+
+%small-marked-font {
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: baseline(1.5rem);
+    text-transform: uppercase;
+}

@@ -6,4 +6,11 @@ html {
 
 body {
     background-color: $white;
+    color: $black;
+}
+
+a {
+    &:hover {
+        cursor: pointer;
+    }
 }
