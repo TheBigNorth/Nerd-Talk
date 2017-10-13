@@ -64,15 +64,6 @@ export default class App extends Component {
                             <p>It occurred to me only after designing it. It is rather passive
                                 aggressive. So be discerning about when and where you wear it.
                             </p>
-                            <h3>Can we get a discount?</h3>
-                            <p>Of course! You can get 30% off when you join 
-                                Nerd Talk. Currently we have no plans to send a newsletter
-                                yet as it's just beginning, but we plan to in future. Of course, 
-                                unsubscribe anytime.
-                            </p>
-                            <p>
-                                <button className="button button--primary">Get with discount</button>
-                            </p>
                             <h3>What about the hoodie itself?</h3>
                             <p>The hoodies are custom made with the help of Teespring. They fulfill the
                                 order every 3 days - or after the campaign is finished.
@@ -100,10 +91,9 @@ export default class App extends Component {
                                 However, I can deal with issues. No problem.
                             </p>
                             <p>
-                                <button className="button button--primary">Get with discount</button>
-                            </p>
-                            <p>
-                                <button className="button button--secondary">Buy full price</button>
+                                <a href="https://teespring.com/en-GB/99-problems-zero-bugs?tsmac=store&tsmic=nerdtalk#pid=377&cid=101241&sid=front">
+                                    <button className="button button--secondary">Purchase</button>
+                                </a>
                             </p>
                         </div>
                     </section>
