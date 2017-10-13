@@ -3,8 +3,10 @@
 .button {
     background-color: $greylight;
     color: $white;
+    font-size: .85em;
     font-weight: 400;
-    padding: 1rem 3rem;
+    line-height: inherit;
+    padding: $baseline 2rem;
     text-transform: uppercase;
     transition: opacity .3s;
 
@@ -13,10 +15,11 @@
     }
 
     &--primary {
-        background-color: $red;
+        background-color: $black;
     }
 
     &--secondary {
-        background-color: $blue;
+        background-color: $greydark;
+        color: $white;
     }
 }

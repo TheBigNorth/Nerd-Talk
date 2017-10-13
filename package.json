@@ -19,6 +19,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "brunch": "^2.10.10",
     "clean-css-brunch": "^2",
+    "contentful": "^4.6.2",
     "csswring": "^5.1",
     "deepcopy": "^0.6.3",
     "jgb-slider": "^0.1.1",

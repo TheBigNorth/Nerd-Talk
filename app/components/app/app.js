@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import AppHeader from '../header/header.js';
+import {createClient} from 'contentful'
 
 export default class App extends Component {
+
+    componentDidMount() {
+        const client = createClient({
+            space: 'hh21kv3qm3ch',
+            accessToken: 'd966a8167d34df659dbd96c800a6a4295a9dc1a424a8a11a0ab8c1668e566c88'
+        });
+        
+        client.getEntries({
+            content_type: 'landing-page'
+        })
+        .then((response) => console.log(response.items))
+        .catch(console.error)
+    }
     
     render() {
 
@@ -92,7 +106,7 @@ export default class App extends Component {
                             </p>
                             <p>
                                 <a href="https://teespring.com/en-GB/99-problems-zero-bugs?tsmac=store&tsmic=nerdtalk#pid=377&cid=101241&sid=front">
-                                    <button className="button button--secondary">Purchase</button>
+                                    <button className="button button--secondary">Buy Here</button>
                                 </a>
                             </p>
                         </div>
