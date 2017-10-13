@@ -14,7 +14,7 @@ export default function(props) {
                 <ul className="navigation">
                     <li className="navigation__item">
                         <a 
-                            src="http://teespring.com/stores/nerdtalk" 
+                            href="http://teespring.com/stores/nerdtalk" 
                             className="navigation__link"
                         >
                             Store
