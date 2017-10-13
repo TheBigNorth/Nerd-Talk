@@ -10,6 +10,18 @@ export default function(props) {
             <div className="header__hamburger">
                 
             </div>
+            <div className="header__navigation">
+                <ul className="navigation">
+                    <li className="navigation__item">
+                        <a 
+                            src="http://teespring.com/stores/nerdtalk" 
+                            className="navigation__link"
+                        >
+                            Store
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 }

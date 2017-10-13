@@ -1,0 +1,39 @@
+@import '../../style/rules/index';
+
+.author {
+    @extend %small-marked-font;
+    background-color: $greylightest;
+    color: $black;
+    margin-top: 7.5rem;
+    padding-bottom: $baseline * 3;
+
+    &__image-holder {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        position: relative;
+    }
+
+    &__image {
+        border: 2px solid $greylightest;
+        border-radius: 100%;
+        margin: 0 auto -6.5rem;
+        max-width: 15rem;
+        overflow: hidden;
+        position: relative;
+        transform: translateY(-7.5rem);
+        width: 100%;
+    }
+
+    &__name,
+    &__link,
+    &__job {
+        display: block;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+
+    &__name {
+        //
+    }
+}

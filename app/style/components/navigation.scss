@@ -1,0 +1,11 @@
+@import '../rules/index';
+
+.navigation {
+    @extend %small-marked-font;
+
+    &__link {
+        &:hover {
+            color: $grey;
+        }
+    }
+}

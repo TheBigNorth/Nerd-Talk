@@ -64,15 +64,6 @@ export default class App extends Component {
                             <p>It occurred to me only after designing it. It is rather passive
                                 aggressive. So be discerning about when and where you wear it.
                             </p>
-                            <h3>Can we get a discount?</h3>
-                            <p>Of course! You can get 30% off when you join 
-                                Nerd Talk. Currently we have no plans to send a newsletter
-                                yet as it's just beginning, but we plan to in future. Of course, 
-                                unsubscribe anytime.
-                            </p>
-                            <p>
-                                <button className="button button--primary">Get with discount</button>
-                            </p>
                             <h3>What about the hoodie itself?</h3>
                             <p>The hoodies are custom made with the help of Teespring. They fulfill the
                                 order every 3 days - or after the campaign is finished.
@@ -80,11 +71,6 @@ export default class App extends Component {
                             <h3>So no wastage?</h3>
                             <p>Nada. Teespring only print custom orders. That way, we're not adding
                                 unneeded rubbish to the earth. At least, not through unwanted hoodies.</p>
-                            <h3>Again. So, where’d the idea come from?</h3>
-                            <p>I won’t say who, but I saw steam. It sprayed from the neck  
-                                of a fellow developer. They had just returned from a meeting. 
-                                They had 99 problems, but a bug wasn’t one. Cheesy I know.
-                            </p>
                             <h3>Don’t like red?</h3>
                             <p>No problem. If you like 
                                 black or grey, we’ve got you covered.
@@ -105,16 +91,31 @@ export default class App extends Component {
                                 However, I can deal with issues. No problem.
                             </p>
                             <p>
-                                <button className="button button--primary">Get with discount</button>
-                            </p>
-                            <p>
-                                &nbsp;<button className="button button--secondary">Buy full price</button>
+                                <a href="https://teespring.com/en-GB/99-problems-zero-bugs?tsmac=store&tsmic=nerdtalk#pid=377&cid=101241&sid=front">
+                                    <button className="button button--secondary">Purchase</button>
+                                </a>
                             </p>
                         </div>
                     </section>
-                </article>
 
-                <span className="spacer spacer--large@large"></span>
+                    <span className="spacer spacer--medium spacer--super@large"></span>
+
+                    <footer className="author">
+                        <div className="author__image-holder">
+                            <img src="https://scontent.flhr3-1.fna.fbcdn.net/v/t1.0-1/p160x160/12075069_10100714711130566_3589096950752527159_n.jpg?oh=0c7f958e1df78e358cefd98334e07087&oe=5A800A27" className="author__image" />
+                        </div>
+                        <p className="author__name">
+                            Gemma Black
+                        </p>
+
+                        <p className="author__link">
+                            <a href="https://github.com/gemmadlou" target="_blank">
+                                Github
+                            </a>
+                        </p>
+                    </footer>
+
+                </article>
             </div>
         )
 
