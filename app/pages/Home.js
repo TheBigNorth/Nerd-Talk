@@ -10,35 +10,6 @@ export default class extends Component {
         this.state = {
             content: ''
         }
-        console.log(this.state)
-    }
-
-    componentDidMount() {
-
-        const client = createClient({
-            space: 'hh21kv3qm3ch',
-            accessToken: 'd966a8167d34df659dbd96c800a6a4295a9dc1a424a8a11a0ab8c1668e566c88'
-        });
-        
-        client.getEntries({
-            content_type: 'landing-page',
-            'fields.slug': 'example-landing-page',
-            'limit': 1
-        })
-        .then((response) => {
-            if (response.items.length === 0) {
-                return;
-            }
-            let content = response.items[0].fields;
-            console.log(response.items.fields);
-            this.setState({content: content.content})
-            this.setState({title: content.title});
-        })
-        .catch(console.error)
-    }
-
-    componentDidUpdate() {
-        
     }
     
     render() {

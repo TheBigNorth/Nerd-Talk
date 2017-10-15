@@ -6,7 +6,9 @@ export default function(props) {
         <div className="header section">
             <div className="header__inner section__inner">
                 <div className="header__logo">
-                    <Logo></Logo>
+                    <a href="/">
+                        <Logo></Logo>
+                    </a>
                 </div>
                 <div className="header__hamburger">
                     

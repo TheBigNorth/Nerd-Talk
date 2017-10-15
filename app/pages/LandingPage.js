@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AppHeader from '../components/header/header.js';
 import {createClient} from 'contentful';
 import Markdown from 'react-remarkable';
+import router from '../http/router.js';
 
 export default class extends Component {
 
@@ -10,9 +11,9 @@ export default class extends Component {
 
         this.state = {
             content: '',
+            slug: props.slug,
             date: {}
         }
-        console.log(this.state)
     }
 
     componentDidMount() {
@@ -24,16 +25,15 @@ export default class extends Component {
         
         client.getEntries({
             content_type: 'landing-page',
-            'fields.slug': 'example-landing-page',
+            'fields.slug': this.state.slug,
             'limit': 1
         })
         .then((response) => {
             if (response.items.length === 0) {
-                return;
+                return router.navigate('/');
             }
             let content = response.items[0].fields;
             let image = response.includes.Asset[0].fields.file.url;
-            console.log(new Date(content.date));
             this.setState({content: content.content})
             this.setState({title: content.title});
             this.setState({url: image});
@@ -81,14 +81,7 @@ export default class extends Component {
                     </header>
                     <section className="section">
                         <div className="section__inner padded typography typography--article">
-                            
                             <Markdown source={this.state.content} />
-
-                            <p>
-                                <a href="https://teespring.com/en-GB/99-problems-zero-bugs?tsmac=store&tsmic=nerdtalk#pid=377&cid=101241&sid=front">
-                                    <button className="button button--secondary">Buy Here</button>
-                                </a>
-                            </p>
                         </div>
                     </section>
 

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import AppHeader from '../header/header.js';
 import {createClient} from 'contentful'
-import Router from 'navigo';
+import router from '../../http/router.js';
 import LandingPage from '../../pages/LandingPage.js';
+import Home from '../../pages/Home.js';
 
 export default class App extends Component {
 
@@ -17,13 +18,13 @@ export default class App extends Component {
 
     componentDidMount() {
 
-        const router = new Router(window.location.origin);
+        //const router = new Router(window.location.origin);
         router
             .on('/l/:slug', (params) => {
-                this.setState({ page: 'landing-page' });
+                this.setState({ page: <LandingPage slug={params.slug} /> });
             })
             .on('*', () => {
-                this.setState({ page: 'home' });
+                this.setState({ page: <Home /> });
             })
             .resolve();
         
@@ -33,7 +34,8 @@ export default class App extends Component {
 
         return (
             <div>
-                <LandingPage></LandingPage>
+                
+                {this.state.page}
 
                 <div className="copynotice">
                     <div className="copynotice__inner">
