@@ -3,9 +3,13 @@
 .intro-image {
     width: 100%;
 
-    @include breakpoint-large {
-        max-height: 50rem;
+    @include breakpoint-medium {
+        max-height: 55rem;
         object-fit: cover;
         overflow: hidden;
+    }
+
+    @include breakpoint-large {
+        max-height: 48rem;
     }
 }

@@ -1,0 +1,14 @@
+@import '../rules/index';
+
+.copynotice {
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__sponsor {
+        padding-bottom: $baseline;
+        padding-top: $baseline;    
+    }
+}

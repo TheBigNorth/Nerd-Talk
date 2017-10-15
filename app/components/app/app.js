@@ -34,6 +34,14 @@ export default class App extends Component {
         return (
             <div>
                 <LandingPage></LandingPage>
+
+                <div className="copynotice">
+                    <div className="copynotice__inner">
+                        <div className="copynotice__sponsor">
+                            Headless CMS Powered By Contentful
+                        </div>
+                    </div>
+                </div>
             </div>
         )
 
