@@ -1,0 +1,11 @@
+@import '../rules/index';
+
+.intro-image {
+    width: 100%;
+
+    @include breakpoint-large {
+        max-height: 50rem;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}

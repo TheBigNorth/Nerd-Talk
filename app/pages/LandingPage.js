@@ -58,15 +58,19 @@ export default class extends Component {
 
                 <div className="header-spacer"></div>
 
-                <span className="spacer spacer--medium@medium spacer--large@large"></span>
+                <img className="intro-image" src={this.state.url} />
+
+                <span className="spacer spacer--xsmall spacer--medium@medium spacer--large@large"></span>
 
                 <article>
                     <header className="section">
                         <div className="section__inner padded">
                             <div className="post-intro">
+
                                 <h1 className="post-intro__title">
                                     {this.state.title}
                                 </h1>
+
                                 <date className="post-intro__date">
                                     {this.state.date.day}-
                                     {this.state.date.month}-
@@ -77,7 +81,6 @@ export default class extends Component {
                     </header>
                     <section className="section">
                         <div className="section__inner padded typography typography--article">
-                            <img src={this.state.url} />
                             
                             <Markdown source={this.state.content} />
 

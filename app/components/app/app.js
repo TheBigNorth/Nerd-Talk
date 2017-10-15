@@ -13,7 +13,6 @@ export default class App extends Component {
             showText: true,
             page: ''
         }
-        console.log(this.state)
     }
 
     componentDidMount() {

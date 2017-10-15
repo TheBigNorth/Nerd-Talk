@@ -2,15 +2,20 @@
 
 .header {
     background-color: $white;
-    border-bottom: 1px solid $greylightest;
-    height: 6rem;
     position: fixed;
     width: 100%;
 
-    &__logo {
-        left: 1.5rem;
+    &__inner {
+        margin: 0 auto;
         position: relative;
-        top: 1rem; 
+    }
+
+    &__logo {
+        display: inline-block;
+        left: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        position: relative;
     }
 
     &__navigation {
@@ -20,12 +25,26 @@
     }
 
     @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+
         &__logo {
             left: 3rem;
         }
         
         &__navigation {
             right: 3rem;
+        }
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, 'large')) {
+        position: relative;
+
+        &__logo {
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+
+        &__navigation {
+            top: 3rem;
         }
     }
 
