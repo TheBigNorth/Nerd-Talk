@@ -22,6 +22,10 @@
         line-height: baseline(3rem);
     }
 
+    a {
+        color: $bluedark;
+    }
+
     p {
         margin-bottom: nth($margin-bottom, 1);
         
@@ -94,5 +98,16 @@
         font-size: .75em;
         font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
         line-height: 1.5em;
+    }
+
+    blockquote {
+        border-left: 1rem solid $blue;
+        color: $grey;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: nth($margin-bottom, 3);
+        margin-top: nth($margin-bottom, 3);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }
