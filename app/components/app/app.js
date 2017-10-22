@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AppHeader from '../header/header.js';
 import {createClient} from 'contentful'
 import router from '../../http/router.js';
-import LandingPage from '../../pages/LandingPage.js';
+import Blog from '../../pages/Blog.js';
 import Home from '../../pages/Home.js';
 
 export default class App extends Component {
@@ -21,7 +21,7 @@ export default class App extends Component {
         //const router = new Router(window.location.origin);
         router
             .on('/l/:slug', (params) => {
-                this.setState({ page: <LandingPage slug={params.slug} /> });
+                this.setState({ page: <Blog slug={params.slug} /> });
             })
             .on('*', () => {
                 this.setState({ page: <Home /> });

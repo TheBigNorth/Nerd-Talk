@@ -45,10 +45,6 @@ export default class extends Component {
         })
         .catch(console.error)
     }
-
-    componentDidUpdate() {
-        
-    }
     
     render() {
 
