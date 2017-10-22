@@ -2,11 +2,13 @@
 
 .logo {
     @extend %small-marked-font;
-    color: $black;
+    color: $greydark;
+    position: relative;
+    width: 15rem;
 
     &__circle {
-        background-color: $black;
-        border: 4px dashed $white;
+        background-color: $greydark;
+        border: 9px solid $blue;
         border-radius: 50%;
         display: inline-block;
         height: 4rem;

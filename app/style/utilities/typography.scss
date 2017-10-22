@@ -1,57 +1,113 @@
 @import '../rules/index';
 
 .typography {
+    $margin-bottom: (
+        ($baseline * 1),
+        ($baseline * 3),
+        ($baseline * 5)
+    );
     font-family: $primary-font;
     font-size: 1.8rem;
-    font-weight: 200;
+    font-weight: 300;
     line-height: baseline(2rem);
 
     @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
+        line-height: baseline(3rem);
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, 'large')) {
+        font-size: 3rem;
         font-weight: 300;
-        line-height: baseline(2.1rem);
+        line-height: baseline(3rem);
+    }
+
+    a {
+        color: $bluedark;
     }
 
     p {
-        margin-bottom: baseline(1rem);
-
+        margin-bottom: nth($margin-bottom, 1);
+        
         @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-            margin-bottom: $baseline * 2;
+            margin-bottom: nth($margin-bottom, 2);
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, 'large')) {
+            margin-bottom: nth($margin-bottom, 3);
         }
     }
 
     img {
-        margin-bottom: baseline(1rem);
+        margin-bottom: nth($margin-bottom, 1);
 
         @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-            margin-bottom: $baseline * 2;
+            margin-bottom: nth($margin-bottom, 2);
+        }
+
+        @media only screen and (min-width: map-get($breakpoints, 'large')) {
+            margin-bottom: nth($margin-bottom, 3);
         }
     }
 
     h2 {
         color: $grey;
-        font-family: $secondary-font;
+        font-family: $primary-font;
         font-size: 2.5rem;
+        font-weight: 300;
         line-height: baseline(2.5rem);
         margin-bottom: baseline(1rem);
 
         @media only screen and (min-width: map-get($breakpoints, 'medium')) {
             font-size: 3.5rem;
             line-height: baseline(3.5rem);
-            margin-bottom: $baseline * 2;
+            margin-bottom: nth($margin-bottom, 2);
         }
     }
-
+    
     h3,
     h4,
     h5,
     h6 {
         color: $black;
-        font-family: $secondary-font;
-        margin-bottom: baseline(1rem);
-
+        font-family: $primary-font;
+        font-weight: 600;
+        margin-bottom: nth($margin-bottom, 1);
+        
         @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-            margin-bottom: $baseline * 2;
+            margin-bottom: nth($margin-bottom, 2);
         }
+    }
+
+    h3 {
+        @media only screen and (min-width: map-get($breakpoints, 'large')) {
+            font-size: 4rem;
+            font-weight: 300;
+            line-height: baseline(4rem);
+        }
+    }
+
+    pre { 
+        padding: ($baseline * 3) 3rem; 
+        color: $white; 
+        background-color: $greydark;
+        white-space: pre; 
+        text-shadow: 0 1px 0 #000;
+        border-bottom: 1px solid #555;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.4) inset, 0 0 20px rgba(0,0,0,0.2) inset;
+        font-size: .75em;
+        font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+        line-height: 1.5em;
+    }
+
+    blockquote {
+        border-left: 1rem solid $blue;
+        color: $grey;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: nth($margin-bottom, 3);
+        margin-top: nth($margin-bottom, 3);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }

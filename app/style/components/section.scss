@@ -3,6 +3,12 @@
 .section {
     &__inner {
         margin: 0 auto;
-        max-width: 840px;
+        max-width: 880px;
+
+        &:after {
+            content: '';
+            display: table;
+            width: 100%;
+        }
     }
 }

@@ -2,8 +2,8 @@
 
 .author {
     @extend %small-marked-font;
-    background-color: $greylightest;
-    color: $black;
+    background-color: $greydark;
+    color: $greylightest;
     margin-top: 7.5rem;
     padding-bottom: $baseline * 3;
 
@@ -14,8 +14,10 @@
     }
 
     &__image {
-        border: 2px solid $greylightest;
+        background-color: $greydark;
+        border: 2px solid $white;
         border-radius: 100%;
+        filter: grayscale(1);
         margin: 0 auto -6.5rem;
         max-width: 15rem;
         overflow: hidden;
@@ -31,9 +33,6 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         text-align: center;
-    }
-
-    &__name {
-        //
+        position: relative;
     }
 }

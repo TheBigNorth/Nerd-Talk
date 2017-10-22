@@ -2,13 +2,30 @@
 
 .post-intro {
     color: $black;
+    font-family: $primary-font;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: baseline(1.3rem);
+    margin-bottom: baseline(.5rem);
+    
+    @media only screen and (min-width: map-get($breakpoints, 'medium')) {
+        font-size: 1.6rem;
+        line-height: baseline(1.6rem);
+        margin-bottom: $baseline * 2;
+    }
+
+    @media only screen and (min-width: map-get($breakpoints, 'large')) {
+        font-size: 2rem;
+        line-height: baseline(2rem);
+    }
     
     &__title {
-        font-family: $secondary-font;
+        font-family: $primary-font;
         font-size: 2.8rem;
-        font-weight: 600;
+        font-weight: 300;
         line-height: baseline(2.8rem);
         margin-bottom: baseline(.5rem);
+        font-style: oblique;
 
         @media only screen and (min-width: map-get($breakpoints, 'medium')) {
             font-size: 4rem;
@@ -23,16 +40,6 @@
 
     &__date {
         display: block;
-        font-family: $primary-font;
-        font-size: 1.4rem;
-        font-weight: 300;
-        line-height: baseline(1.3rem);
         margin-bottom: baseline(.5rem);
-        
-        @media only screen and (min-width: map-get($breakpoints, 'medium')) {
-            font-size: 1.6rem;
-            line-height: baseline(1.6rem);
-            margin-bottom: $baseline * 2;
-        }
     }
 }

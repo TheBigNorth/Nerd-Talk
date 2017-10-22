@@ -2,5 +2,9 @@
 
 .header-spacer {
     display: block;
-    height: 8rem;
+    height: 6rem;
+
+    @media only screen and (min-width: map-get($breakpoints, 'large')) {
+        height: 0;
+    }
 }

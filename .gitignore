@@ -58,3 +58,6 @@ typings/
 .env
 
 public/*
+
+# Netlify
+!public/_redirects
